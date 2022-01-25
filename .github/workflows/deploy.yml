@@ -16,12 +16,11 @@ jobs:
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
+
     steps:
+      - uses: actions/checkout@v2
       - name: generate all files
-        run: |
-          chmod +x gen_all
-          ./gen_all
-        shell: bash
+        run: ./gen_all
       
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.2.0
