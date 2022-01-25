@@ -20,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: install pandoc
-        run: sudo pat install pandoc
+        run: sudo apt install pandoc
 
       - name: generate all files
         run: ./gen_all
