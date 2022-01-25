@@ -19,8 +19,9 @@ jobs:
     steps:
       - name: generate all files
         run: |
-          ls
-          sh ${GITHUB_WORKSPACE}/gen_all
+          chmod +x gen_all
+          ./gen_all
+        shell: bash
       
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.2.0
