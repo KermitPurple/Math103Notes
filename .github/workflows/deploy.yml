@@ -23,7 +23,7 @@ jobs:
         run: sudo apt install pandoc
 
       - name: generate all files
-        run: ./gen_all
+        run: bash gen_all
       
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.2.0
